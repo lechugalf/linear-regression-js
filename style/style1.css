@@ -1,0 +1,85 @@
+body {
+    align-self: center;
+    font-family: Roboto mono;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+header, nav, section, footer{
+    /*width: 300px;
+    border: 25px solid green;*/
+    padding: 10px;
+    margin:  10px;
+}
+
+.main-nav li{
+    align-self: center;
+    display: block;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    display: inline;
+    padding-right: 30px;
+    margin: 0px;
+}
+p {
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+img {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 40%;
+}
+p.pie
+{
+    color: #6d6d6d;
+    text-align: center;
+}
+#divChart{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 98%;
+}
+
+#chart{
+    /*border: black solid 1px;*/
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 90%;
+}
+
+textarea{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#generar{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button, input, option, select{
+    font-family: Roboto mono;
+}
+
+.img1{
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 70%;
+}

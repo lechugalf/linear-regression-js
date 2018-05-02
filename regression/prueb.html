@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pruebas</title>
+        <meta charset="UTF-8">
+        <link href="../style/style1.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+        <script src="../src/main.js"></script>
+        <script src="../src/datasets.js"></script>
+        <script src="../src/linreg.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Regresión Lineal</h1>
+            <a href="../index.html"><-</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="algor.html">Algoritmo</a></li>
+                <li><a href="prueb.html">Pruebas</a></li>
+            </ul>
+        </nav>
+        <section>
+            <p>Implementación del algoritmo de regresión lineal en JavaScript, unicamente para datos etiquetados.</p>
+            <form>
+                <select id="sel">
+                    <option value="1">Dataset1</option>
+                    <option value="2">Dataset2</option>
+                    <option value="3">Dataset3</option>
+                    <option value="4">Dataset4</option>
+                    <option value="5">Dataset5</option>
+                </select>
+                <select id="lr">
+                    <option value="1">Learning Rate 0.01</option>
+                    <option value="2">Learning Rate 0.001</option>
+                    <option value="3">Learning Rate 0.0001</option>
+                    <option value="4">Learning Rate 0.00001</option>
+                    <option value="5">Learning Rate 0.000001</option>
+                </select>
+                <button type="button" onclick="graficar()">Seleccionar datos</button>
+            </form>
+            <div id="divChart">
+                <canvas id="chart"></canvas>
+            </div>
+            <form>
+                <button id="generar" type="button" disabled onclick="regressionLineal()">Generar linea óptima</button>
+                <textarea id="salida" rows="10" disabled></textarea>
+            </form>
+        </section>
+        <footer>
+            <p class="pie">Proyecto JS</p>
+        </footer>
+    </body>
+</html>

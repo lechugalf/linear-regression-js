@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Algoritmo</title>
+        <meta charset="UTF-8">
+        <link href="../style/style1.css" rel="stylesheet">
+        <link href="../style/prism.css" rel="stylesheet">
+    </head>
+    <body class="language-js">
+        <header>
+            <h1>Regresión Lineal</h1>
+            <a href="../index.html"><-</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="algor.html">Algoritmo</a></li>
+                <li><a href="prueb.html">Pruebas</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h4>En construcción</h4>
+
+            <img class="img1" src="../images/error.png">
+
+            <pre><code>
+function calcularError(datos, b, m)
+{
+    var error = 0;
+    datos.forEach(function(element)
+    {
+        error += Math.pow((element[1] - (m * element[0] + b)), 2);
+    });
+    return error / datos.length;
+}
+            </code></pre>
+            <h4>En construcción</h4>
+            <pre><code>
+function pasoGradiente(datos, m, b, learningRate){
+    var mg = 0, bg = 0, N = datos.length;
+    datos.forEach(function(element) {
+        mg += -(2 / N) * element[0] * (element[1] - * element[0]) + b));
+        bg += -(2 / N) * (element[1] - ((m * element + b));
+    });
+    M = m - (mg * learningRate);
+    B = b - (bg * learningRate);
+    return [B, M];
+}
+            </code></pre>
+            <h4>En construcción</h4>
+            <img class="img1" src="../images/segderiv.png">
+
+            <pre><code>
+function descensoGradiente(datos, inim, inib, learningRate, iters){
+    var m = inim, b = inib;
+    var result;
+    for(var i = 0; i < iters; ++i){
+        //[m, b] = pasoGradiente(datos, m, b, learningRate);
+        result = pasoGradiente(datos, m, b, learningRate);
+        m = result[0];
+        b = result[1];
+    }
+    return [m, b];
+}
+            </code></pre>
+        </section>
+
+        <footer>
+            <p class="pie">Proyecto JS</p>
+        </footer>
+        <script src="../src/prism.js"></script>
+    </body>
+</html>
