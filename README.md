@@ -1,5 +1,5 @@
 # linear-regression-js
-Simple linear regression with JS
+Simple linear regression with gradient descent in JS
 
 ## Getting Started
 Simple Linear Regression with two variables written in JavaScript. Include a brief description about this machine learning algorithm.
